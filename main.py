@@ -41,8 +41,9 @@ def special(char_name: str, char_class: str) -> str:
 
 
 def start_training(char_name: str, char_class: str) -> str:
-    """Представление выбранного класса и тренировка
-     использования комманд attack, difence и special."""
+    """Presentation of the selected class.
+    Practice using the attack, defence, and special commands.
+    """
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
@@ -67,8 +68,9 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class() -> str:
-    """Set the name of the character and
-    can choose one of the classes of warrior, mage or healer."""
+    """Set the name of the character.
+    Choose one of the classes of warrior, mage or healer.
+    """
     approve_choice: str = None
     char_class: str = None
     while approve_choice != 'y':
@@ -92,7 +94,7 @@ def choice_char_class() -> str:
 
 
 def main() -> None:
-    """Running the main program."""
+    """Run the main program."""
     print('Приветствую тебя, искатель приключений!')
     print('Прежде чем начать игру...')
     char_name: str = input('...назови себя: ')
